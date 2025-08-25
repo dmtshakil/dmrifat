@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    var colors = ['#000000ff', '#000000ff']; // Colors for each string
+    var colors = ['#ff6b08ff', '#be4600ff']; // Colors for each string
     var currentIndex = 0;
 
     var typed = new Typed('#element', {
-        strings: ['Digital Marketer', 'Social Media Marketing Expert', 'Search Engine Marketing Expert', 'Shopify Expert'],
+        strings: ['Digital Marketer', 'Social Media Marketing Expert', 'Search Engine Marketing Expert', 'Web Analytics Expert', 'Shopify Expert'],
         typeSpeed: 50,
         backSpeed: 25,
         loop: true,
@@ -207,25 +207,25 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function () {
-    function reorderContent() {
-        if ($(window).width() < 576) {
-            // যদি phone screen হয়, তাহলে text div কে image div এর নিচে পাঠানো হবে
-            $('.tilt-in-left-1').insertBefore('.image-content2');
-        } else {
-            // বড় screen হলে আবার আগের অবস্থায় নিয়ে যাবে
-            $('.image-content2').insertBefore('.tilt-in-left-1');
-        }
-    }
+// $(document).ready(function () {
+//     function reorderContent() {
+//         if ($(window).width() < 576) {
+//             // যদি phone screen হয়, তাহলে text div কে image div এর নিচে পাঠানো হবে
+//             $('.tilt-in-left-1').insertBefore('.image-content2');
+//         } else {
+//             // বড় screen হলে আবার আগের অবস্থায় নিয়ে যাবে
+//             $('.image-content2').insertBefore('.tilt-in-left-1');
+//         }
+//     }
 
-    // প্রথমবার রান করাবে
-    reorderContent();
+//     // প্রথমবার রান করাবে
+//     reorderContent();
 
-    // resize হলে চেক করবে
-    $(window).resize(function () {
-        reorderContent();
-    });
-});
+//     // resize হলে চেক করবে
+//     $(window).resize(function () {
+//         reorderContent();
+//     });
+// });
 
 
 
